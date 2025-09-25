@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>porfolio website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Saad</p>
+          <span>.</span>
+        </div>
+
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav-menu-list">
+            <li class="nav_list">
+              <a href="#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contect</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-button">
+          <button class="btn">Download CV <i class="fa-regular fa-file"></i></button>
+        </div>
+
+        <div class="nav-menu-btn">
+          <i class="fa-solid fa-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+    </div>
+
+    <main class="wrapper">
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="featured-text-card">
+            <span>Saad Khan</span>
+          </div>
+          <div class="featured-name">
+            <p>I'm <span class="typedText">Designer</span></p>
+          </div>
+
+          <div class="featured-text-info">
+            <p>I'm an experienced web designer with a passion for creating beautiful and functional user experiences.</p>
+          </div>
+          <div class="featured-text-btn">
+            <button class="btn blue-btn">Hire me</button>
+            <button class="btn">Download CV<i class="fa-regular fa-file"></i></button>
+          </div>
+
+          <div class="social_icons">
+            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="icon"><i class="fa-brands fa-dribbble"></i></div>
+            <div class="icon"><i class="fa-brands fa-github"></i></div>
+          </div>
+        </div>
+
+        <div class="featured-image">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="avatar"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <div class="top-header">
+          <h1>About Me</h1>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="about-info">
+              <h3>My introduction</h3>
+              <p>
+                I am well-versed in HTML, CSS and JavaScript, and other cutting edge frameworks and libraries, which all me to implement modern web design principles. Additionally, I have experience
+                with responsive design, ensuring that my websites look great on all devices.
+              </p>
+              <div class="about-btn">
+                <button class="btn">Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Frontend Development</h3>
+              </div>
+
+              <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>Vue.js</span>
+                <span>React.js</span>
+                <span>Angular</span>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Backend Development</h3>
+              </div>
+
+              <div class="skills-list">
+                <span>PHP</span>
+                <span>JAVA</span>
+                <span>Python</span>
+                <span>C++</span>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Database</h3>
+              </div>
+
+              <div class="skills-list">
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+                <span>SQLite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-projects" id="projects">
+        <div class="top-header">
+          <h1>Projects</h1>
+        </div>
+        <div class="projects-container">
+          <div class="projects-box">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Completed</h3>
+            <label>15+ Finished Projects</label>
+          </div>
+          <div class="projects-box">
+            <i class="fa-solid fa-user"></i>
+            <h3>Clients</h3>
+            <label>25+ Happy Clients</label>
+          </div>
+          <div class="projects-box">
+            <i class="fa-solid fa-award"></i>
+            <h3>Experience</h3>
+            <label>7+ Years in the Industry</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="top-header">
+          <h1>Get in touch</h1>
+          <span>Do you have any questions or inquiries? Contact me here </span>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="contact-info">
+              <h2>Find Me <i class="fa-solid fa-arrow-down"></i></h2>
+              <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:your-email@example.com">Saad@khan.com</a></p>
+              <p><i class="fa-solid fa-phone"></i> Phone: <a href="tel:+123456789">+123456789</a></p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-control">
+              <div class="form-inputs">
+                <input type="text" class="input-field" placeholder="Your Name" />
+                <input type="text" class="input-field" placeholder="Your Email" />
+              </div>
+              <div class="text-area">
+                <textarea rows="5" placeholder="Message"></textarea>
+              </div>
+              <div class="form-button">
+                <button class="btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="top-footer">
+        <p>Saad Khan.</p>
+      </div>
+
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#home">Home</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+        <div class="icon"><i class="fa-brands fa-dribbble"></i></div>
+        <div class="icon"><i class="fa-brands fa-github"></i></div>
+      </div>
+      <div class="bottom-footer">
+        <p>Copyright &copy; <a href="home" style="text-decoration: none">Saad Khan</a>- All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
